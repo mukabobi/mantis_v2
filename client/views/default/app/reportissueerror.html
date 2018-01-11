@@ -1,0 +1,29 @@
+<ion-view data-comp-id="ionic-view.1">
+    <ion-nav-bar align-title="" class=" bar-positive headerclr"
+        data-comp-id="nav-bar.1">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon ion-chevron-left" data-comp-id="button.1"
+                ng-click="app.action('reportissueerror', 'gotoReportIssue', this)"></button>
+        </ion-nav-buttons>
+        <ion-nav-title data-comp-id="nav-title.1">
+            Report Issue Error
+        </ion-nav-title>
+        <ion-nav-buttons side="right"></ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content data-comp-id="ionic-content.1">
+        <div data-comp-id="div.1">
+            <div class="row" data-comp-id="row.1"
+                style="border: 1px solid #000; margin-top: 25%;padding: 5px 13px 5px 13px;">
+                <div class="col" data-comp-id="column.1">
+                    <table>
+                        <tbody>
+                            <tr ng-repeat="error in data.errorList">
+                                <td ng-bind="error.errormessage"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,73 @@
+{
+  "type": "object",
+  "properties": {
+    "issueList": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "selector": "td > span > a",
+            "control": "property.innerHTML"
+          },
+          "title": {
+            "type": "string",
+            "selector": "td > span",
+            "control": {
+              "fn": "function(node){return node.split('\\n')[0]}",
+              "control": "property.innerText"
+            },
+            "selectIndex": 1
+          },
+          "category": {
+            "type": "string",
+            "selector": "td > span",
+            "control": {
+              "fn": "function(node){var temp=node.split('\\n')[1];console.log('temp.................',temp);return temp.split('-')[0]}",
+              "control": "property.innerText"
+            },
+            "selectIndex": 1
+          },
+          "date": {
+            "type": "string",
+            "selector": "td > span",
+            "control": {
+              "fn": "function(node){var temp=node.split('\\n')[1];return temp.substring(temp.indexOf('-')+2)}",
+              "control": "property.innerText"
+            },
+            "selectIndex": 1
+          },
+          "viewdetails": {
+            "type": "action",
+            "selector": "a",
+            "control": "action.link"
+          }
+        }
+      },
+      "selectorAll": "table tbody tr:nth-child(1) td > table tr[bgcolor=\"#c2dfff\"]"
+    },
+    "isIssues": {
+      "type": "identifier",
+      "control": "exists",
+      "selectContains": "Assigned to Me (Unresolved)",
+      "selector": "tbody tr td"
+    },
+    "reportIssue": {
+      "type": "action",
+      "selector": ".menu a",
+      "control": "action.link",
+      "selectIndex": 2
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "isIssues"
+      ],
+      "screens": [
+        "home"
+      ]
+    }
+  ]
+}

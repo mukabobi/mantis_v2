@@ -1,0 +1,42 @@
+{
+  "id": "0000450",
+  "project": "Valley Medical Center",
+  "category": "[All Projects] Cardiology",
+  "dateSubmitted": "2017-06-14 20:42",
+  "lastUpdated": "2017-06-14 20:42",
+  "reporter": "administrator",
+  "assignedTo": "administrator",
+  "priority": "none",
+  "severity": "feature",
+  "reproducibility": "always",
+  "status": "assigned",
+  "resolution": "open",
+  "platform": "",
+  "OS": "",
+  "osversion": "",
+  "summary": "0000450: Image loads slowly",
+  "description": "Image loads slowly",
+  "tags": "Image loads slowly",
+  "attachTags": "",
+  "existingTags": {
+    "selected": {
+      "label": "Existing tags",
+      "value": "0"
+    },
+    "options": [
+      {
+        "label": "Existing tags",
+        "value": "0"
+      },
+      {
+        "label": "release1.1",
+        "value": "1"
+      },
+      {
+        "label": "round1",
+        "value": "2"
+      }
+    ]
+  },
+  "isViewdetails": true
+}

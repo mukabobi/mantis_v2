@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "logout": {
+      "type": "action",
+      "selector": ".menu a",
+      "control": "action.link",
+      "selectContains": "Logout"
+    },
+    "gotohome": {
+      "type": "action",
+      "selector": ".menu a",
+      "control": "action.link",
+      "selectContains": "My View"
+    }
+  },
+  "connect": []
+}

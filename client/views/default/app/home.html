@@ -1,0 +1,69 @@
+<ion-view data-comp-id="ionic-view.1">
+    <ion-nav-bar align-title="" class=" bar-positive headerclr"
+        data-comp-id="nav-bar.1">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon ion-navicon" data-comp-id="button.1"
+                ng-click="app.showMenu()"></button>
+        </ion-nav-buttons>
+        <ion-nav-title data-comp-id="nav-title.1">Issues</ion-nav-title>
+        <ion-nav-buttons side="right">
+            <button class=" button-clear icon-left ion-plus-circled button-dark"
+                data-comp-id="button.2" ng-click="app.action('home', 'reportIssue', this)"
+                style="color: rgb(255, 255, 255); margin: 0px 4px; font-size: 24px;"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content class="" data-comp-id="ionic-content.1"
+        style="background-color: rgb(232, 232, 232);">
+        <div class="" data-comp-id="div.1" style="background-color: rgb(232, 232, 232);">
+            <div class="row" data-comp-id="row.1"
+                style="background-color: rgb(243, 243, 243);">
+                <div class="col text-center" data-comp-id="column.1"
+                    style="border-bottom: 3px solid rgb(113, 176, 61); margin: 0px 0px -5px;">
+                    <i class="icon ion-bug positive" data-comp-id="icon.1"
+                        style="font-size: 20px; color: rgb(113, 176, 61);"></i>
+                    <div class=" positive" data-comp-id="text.1"
+                        style="font-size: 12px; color: rgb(113, 176, 61);">Assigned to me</div>
+                </div>
+                <!--<div class="col text-center" data-comp-id="column.2">
+                    <i class="icon ion-ios-flag dark" data-comp-id="icon.2"
+                        style="font-size: 20px; color: rgb(153, 153, 153);"></i>
+                    <div class=" positive" data-comp-id="text.2"
+                        style="font-size: 12px; color: rgb(153, 153, 153);">Reported by me</div>
+                </div>-->
+            </div>
+        </div>
+        <div class="light-bg item-divider" data-comp-id="div.2"
+            ng-repeat="item in data.issueList"
+            style="border-bottom: 1px solid rgb(238, 238, 238);">
+            <div class="row" data-comp-id="row.2" ng-click="goToIssueDetails($index)">
+                <div class="col col-80" data-comp-id="column.2" style="margin: 2% 0% 0% 4%;">
+                    <div class="" data-comp-id="text.2" ng-bind="item.title"
+                        style="font-size: 18px; color: rgb(102, 102, 102); font-weight: normal;"></div>
+                    <div data-comp-id="text.3" ng-bind="item.id"
+                        style="font-size: 14px; color: rgb(153, 153, 153); font-weight: normal; margin: 4px 0px 0px;"></div>
+                </div>
+                <div class="col" data-comp-id="column.3" style="margin: 2% 4% 0% 0%;">
+                    <i class="icon ion-ios-checkmark-outline positive" data-comp-id="icon.2"
+                        ng-if="item.synced=='synced'" style="font-size: 30px;" }=""></i>
+                    <ion-spinner icon="android" ng-if="item.synced=='syncing'" }=""></ion-spinner>
+                    <i class="icon ion-ios-cloud-download positive" data-comp-id="icon.3"
+                        ng-click="doDownload(item)" ng-if="item.synced=='unsynced'"
+                        style="font-size: 30px;" }=""></i>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.3">
+                <div class="col col-80" data-comp-id="column.4" style="margin: 0% 0% 0% 4%;">
+                    <i class="icon ion-ios-list-outline" data-comp-id="icon.4"
+                        style="float: left; color: rgb(153, 153, 153);"></i>
+                    <div data-comp-id="text.4" ng-bind="item.category | split:']':1"
+                        style="color: rgb(153, 153, 153); font-size: 14px; float: left; margin: 0px 0px 0px 4px; font-weight: normal;"></div>
+                    <i class="icon ion-ios-clock-outline" data-comp-id="icon.5"
+                        style="float: left; color: rgb(153, 153, 153); margin: 0px 0px 0px 24px;"></i>
+                    <div data-comp-id="text.5" ng-bind="item.date | date:'shortDate'"
+                        style="color: rgb(153, 153, 153); font-size: 14px; float: left; margin: 0px 0px 0px 4px; font-weight: normal;"></div>
+                </div>
+                <div class="col" data-comp-id="column.5" style="margin: 0% 4% 0% 0%;"></div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

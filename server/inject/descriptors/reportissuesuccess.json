@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "success": {
+      "type": "string",
+      "control": "property.innerText",
+      "selector": "div[align='center']"
+    },
+    "isreportissuesuccess": {
+      "type": "identifier",
+      "control": "exists",
+      "selectContains": "Operation successful",
+      "selector": "div[align='center']"
+    },
+    "gotohome": {
+      "type": "action",
+      "selector": ".menu a",
+      "control": "action.link",
+      "selectContains": "My View"
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "isreportissuesuccess"
+      ],
+      "screens": [
+        "reportissuesuccess"
+      ]
+    }
+  ]
+}

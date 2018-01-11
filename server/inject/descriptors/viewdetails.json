@@ -1,0 +1,150 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "control": "property.innerText",
+      "selector": "table.width100 > tbody > tr:nth-child(3) > td"
+    },
+    "project": {
+      "type": "string",
+      "selector": "table.width100 > tbody > tr:nth-child(3) > td",
+      "control": "property.innerText",
+      "selectIndex": 1
+    },
+    "category": {
+      "type": "string",
+      "selector": "table.width100 > tbody > tr:nth-child(3) > td",
+      "control": "property.innerText",
+      "selectIndex": 2
+    },
+    "dateSubmitted": {
+      "type": "string",
+      "selector": "table.width100 > tbody > tr:nth-child(3) > td",
+      "control": "property.innerText",
+      "selectIndex": 4
+    },
+    "lastUpdated": {
+      "type": "string",
+      "selector": "table.width100 > tbody > tr:nth-child(3) > td",
+      "control": "property.innerText",
+      "selectIndex": 5
+    },
+    "reporter": {
+      "type": "string",
+      "selector": "table.width100 > tbody > tr:nth-child(5) > td",
+      "control": "property.innerText",
+      "selectIndex": 1
+    },
+    "assignedTo": {
+      "type": "string",
+      "selector": "table.width100 > tbody > tr:nth-child(6) > td",
+      "control": "property.innerText",
+      "selectIndex": 1
+    },
+    "priority": {
+      "type": "string",
+      "selector": "table.width100 > tbody > tr:nth-child(7) > td",
+      "control": "property.innerText",
+      "selectIndex": 1
+    },
+    "severity": {
+      "type": "string",
+      "selector": "table.width100 > tbody > tr:nth-child(7) > td",
+      "control": "property.innerText",
+      "selectIndex": 3
+    },
+    "reproducibility": {
+      "type": "string",
+      "selector": "table.width100 > tbody > tr:nth-child(7) > td",
+      "control": "property.innerText",
+      "selectIndex": 5
+    },
+    "status": {
+      "type": "string",
+      "selector": "table.width100 > tbody > tr:nth-child(8) > td",
+      "control": "property.innerText",
+      "selectIndex": 1
+    },
+    "resolution": {
+      "type": "string",
+      "selector": "table.width100 > tbody > tr:nth-child(8) > td",
+      "control": "property.innerText",
+      "selectIndex": 3
+    },
+    "platform": {
+      "type": "string",
+      "selector": "table.width100 > tbody > tr:nth-child(9) > td",
+      "control": "property.innerText",
+      "selectIndex": 1
+    },
+    "OS": {
+      "type": "string",
+      "selector": "table.width100 > tbody > tr:nth-child(9) > td",
+      "control": "property.innerText",
+      "selectIndex": 3
+    },
+    "osversion": {
+      "type": "string",
+      "selector": "table.width100 > tbody > tr:nth-child(9) > td",
+      "control": "property.innerText",
+      "selectIndex": 5
+    },
+    "summary": {
+      "type": "string",
+      "selector": "table.width100 > tbody > tr:nth-child(11) > td",
+      "control": "property.innerText",
+      "selectIndex": 1
+    },
+    "description": {
+      "type": "string",
+      "selector": "table.width100 > tbody > tr:nth-child(12) > td",
+      "control": "property.innerText",
+      "selectIndex": 1
+    },
+    "tags": {
+      "type": "string",
+      "selector": "table.width100 > tbody > tr:nth-child(13) > td",
+      "control": "property.innerText",
+      "selectIndex": 1
+    },
+    "attachTags": {
+      "type": "string",
+      "selector": "#tag_string",
+      "control": "text"
+    },
+    "existingTags": {
+      "type": "select",
+      "selector": "#tag_select",
+      "control": "select"
+    },
+    "isViewdetails": {
+      "type": "identifier",
+      "control": "exists",
+      "selectContains": "View Issue Details",
+      "selector": "body"
+    },
+    "gotoreportissue": {
+      "type": "action",
+      "selector": ".menu a",
+      "control": "action.link",
+      "selectContains": "Report Issue"
+    },
+    "gotohome": {
+      "type": "action",
+      "selector": ".menu a",
+      "control": "action.link",
+      "selectContains": "My View"
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "isViewdetails"
+      ],
+      "screens": [
+        "viewdetails"
+      ]
+    }
+  ]
+}

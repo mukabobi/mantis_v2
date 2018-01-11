@@ -1,0 +1,9 @@
+[
+  "login.json",
+  "home.json",
+  "viewdetails.json",
+  "reportissues.json",
+  "reportissuesuccess.json",
+  "reportissueerror.json",
+  "menu.json"
+]

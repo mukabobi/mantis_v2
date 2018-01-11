@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "properties": {
+    "errorList": {
+      "type": "array",
+      "selectorAll": "table.width50 > tbody > tr",
+      "items": {
+        "type": "object",
+        "properties": {
+          "errormessage": {
+            "type": "string",
+            "selector": "td",
+            "control": "property.innerText"
+          }
+        }
+      }
+    },
+    "isreportissueerror": {
+      "type": "identifier",
+      "selector": "td.form-title",
+      "control": "exists",
+      "selectContains": "APPLICATION ERROR"
+    },
+    "gotoReportIssue": {
+      "type": "action",
+      "selector": ".menu a",
+      "control": "action.link",
+      "selectContains": "Report Issue"
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "isreportissueerror"
+      ],
+      "screens": [
+        "reportissueerror"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "type": "object",
+  "properties": {
+    "category": {
+      "type": "select",
+      "selector": "[name='category_id']",
+      "control": "select"
+    },
+    "reproducibility": {
+      "type": "select",
+      "selector": "[name=\"reproducibility\"]",
+      "control": "select"
+    },
+    "Severity": {
+      "type": "select",
+      "selector": "[name=\"severity\"]",
+      "control": "select"
+    },
+    "Prority": {
+      "type": "select",
+      "selector": "[name=\"priority\"]",
+      "control": "select"
+    },
+    "selectProfile": {
+      "type": "select",
+      "selector": "[name=\"profile_id\"]",
+      "control": "select"
+    },
+    "assignTo": {
+      "type": "select",
+      "selector": "[name=\"handler_id\"]",
+      "control": "select"
+    },
+    "Summary": {
+      "type": "string",
+      "selector": "[name=\"summary\"]",
+      "control": "text"
+    },
+    "Description": {
+      "type": "string",
+      "selector": "[name=\"description\"]",
+      "control": "text"
+    },
+    "StepsToReproduce": {
+      "type": "string",
+      "selector": "[name=\"steps_to_reproduce\"]",
+      "control": "text"
+    },
+    "AdditionalInfo": {
+      "type": "string",
+      "selector": "[name=\"additional_info\"]",
+      "control": "text"
+    },
+    "ReportStay": {
+      "type": "string",
+      "selector": "#report_stay",
+      "control": "checkbox"
+    },
+    "isreportissue": {
+      "type": "identifier",
+      "control": "exists",
+      "selectContains": "Enter Report Details",
+      "selector": "body"
+    },
+    "submitIssues": {
+      "type": "action",
+      "selector": "input[class='button']",
+      "control": "action.button"
+    },
+    "gotohome": {
+      "type": "action",
+      "selector": ".menu a",
+      "control": "action.link",
+      "selectContains": "My View"
+    },
+    "viewStatus": {
+      "type": "select",
+      "selector": "[name='view_state']",
+      "control": "planRadio"
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "isreportissue"
+      ],
+      "screens": [
+        "reportissue"
+      ]
+    }
+  ]
+}

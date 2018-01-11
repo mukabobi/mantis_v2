@@ -1,0 +1,162 @@
+<ion-view data-comp-id="ionic-view.1">
+    <ion-nav-bar align-title="" class="headerclr bar-positive"
+        data-comp-id="nav-bar.1">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon ion-chevron-left" data-comp-id="button.1"
+                ng-click="app.action('viewdetails', 'gotohome', this)"
+                style="color: rgb(255, 255, 255);"></button>
+        </ion-nav-buttons>
+        <ion-nav-title data-comp-id="nav-title.1" style="color: rgb(255, 255, 255);">Issue Details</ion-nav-title>
+        <ion-nav-buttons side="right"></ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content data-comp-id="ionic-content.1"
+        style="background-color: rgb(232, 232, 232);">
+        <div class=" card" data-comp-id="div.1">
+            <div class="row" data-comp-id="row.1"
+                style="border-bottom: 1px solid rgb(243, 243, 243);">
+                <div class="col" data-comp-id="column.1" style="margin: 2% 4%;">
+                    <div data-comp-id="text.1"
+                        style="font-size: 14px; color: rgb(102, 102, 102); font-weight: 300;">Id</div>
+                    <div data-comp-id="text.2" ng-bind="data.id" style="color: rgb(51, 51, 51);">Some text</div>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.2"
+                style="border-bottom: 1px solid rgb(243, 243, 243);">
+                <div class="col" data-comp-id="column.2" style="margin: 2% 4%;">
+                    <div data-comp-id="text.3"
+                        style="font-weight: 300; color: rgb(102, 102, 102); font-size: 14px;">Description</div>
+                    <div data-comp-id="text.4" ng-bind="data.description"
+                        style="color: rgb(51, 51, 51);">Some text</div>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.3">
+                <div class="col" data-comp-id="column.3" style="margin: 2% 4%;">
+                    <div data-comp-id="text.5"
+                        style="font-size: 14px; font-weight: 300; color: rgb(102, 102, 102);">Summary</div>
+                    <div data-comp-id="text.6" ng-bind="data.summary"
+                        style="color: rgb(51, 51, 51);"></div>
+                </div>
+            </div>
+        </div>
+        <div class=" card" data-comp-id="div.2">
+            <div class="row" data-comp-id="row.4"
+                style="border-bottom: 1px solid rgb(243, 243, 243);">
+                <div class="col" data-comp-id="column.4" style="margin: 2% 4%;">
+                    <div data-comp-id="text.7"
+                        style="font-weight: 300; color: rgb(102, 102, 102); font-size: 14px;">Tags</div>
+                    <div data-comp-id="text.8" ng-bind="data.tags">Some text</div>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.5"
+                style="border-bottom: 1px solid rgb(243, 243, 243);">
+                <div class="col" data-comp-id="column.5" style="margin: 2% 4%;">
+                    <div data-comp-id="text.9"
+                        style="font-weight: 300; color: rgb(102, 102, 102); font-size: 14px;">Project</div>
+                    <div data-comp-id="text.10" ng-bind="data.project">Some text</div>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.6"
+                style="border-bottom: 1px solid rgb(243, 243, 243);">
+                <div class="col" data-comp-id="column.6" style="margin: 2% 4%;">
+                    <div data-comp-id="text.11"
+                        style="font-weight: 300; font-size: 14px; color: rgb(102, 102, 102);">Category</div>
+                    <div data-comp-id="text.12" ng-bind="data.category">Some text</div>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.7"
+                style="border-bottom: 1px solid rgb(243, 243, 243);">
+                <div class="col" data-comp-id="column.7" style="margin: 2% 4%;">
+                    <div data-comp-id="text.13"
+                        style="font-weight: 300; color: rgb(102, 102, 102); font-size: 14px;">View Status</div>
+                    <div data-comp-id="text.14" ng-bind="data.viewStatus">Some text</div>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.8"
+                style="border-bottom: 1px solid rgb(243, 243, 243);">
+                <div class="col" data-comp-id="column.8" style="margin: 2% 4%;">
+                    <div data-comp-id="text.15"
+                        style="font-weight: 300; font-size: 14px; color: rgb(102, 102, 102);">Date Submitted</div>
+                    <div data-comp-id="text.16" ng-bind="data.dateSubmitted">Some text</div>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.9">
+                <div class="col" data-comp-id="column.9" style="margin: 2% 4%;">
+                    <div data-comp-id="text.17"
+                        style="font-weight: 300; color: rgb(102, 102, 102); font-size: 14px;">Last Update</div>
+                    <div data-comp-id="text.18" ng-bind="data.lastUpdated">Some text</div>
+                </div>
+            </div>
+        </div>
+        <div class=" card" data-comp-id="div.3">
+            <div class="row" data-comp-id="row.10"
+                style="border-bottom: 1px solid rgb(243, 243, 243);">
+                <div class="col" data-comp-id="column.10" style="margin: 2% 4%;">
+                    <div data-comp-id="text.19" style="font-weight: 300; color: rgb(102, 102, 102);">Reporter</div>
+                    <div data-comp-id="text.20" ng-bind="data.reporter">Some text</div>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.11"
+                style="border-bottom: 1px solid rgb(243, 243, 243);">
+                <div class="col" data-comp-id="column.11" style="margin: 2% 4%;">
+                    <div data-comp-id="text.21" style="font-weight: 300; color: rgb(102, 102, 102);">Assigned To</div>
+                    <div data-comp-id="text.22" ng-bind="data.assignedTo">Some text</div>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.12"
+                style="border-bottom: 1px solid rgb(243, 243, 243);">
+                <div class="col" data-comp-id="column.12" style="margin: 2% 4%;">
+                    <div data-comp-id="text.23" style="font-weight: 300; color: rgb(102, 102, 102);">Priority</div>
+                    <div data-comp-id="text.24" ng-bind="data.priority">Some text</div>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.13"
+                style="border-bottom: 1px solid rgb(243, 243, 243);">
+                <div class="col" data-comp-id="column.13" style="margin: 2% 4%;">
+                    <div data-comp-id="text.25" style="font-weight: 300; color: rgb(102, 102, 102);">Severity</div>
+                    <div data-comp-id="text.26" ng-bind="data.severity">Some text</div>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.14"
+                style="border-bottom: 1px solid rgb(243, 243, 243);">
+                <div class="col" data-comp-id="column.14" style="margin: 2% 4%;">
+                    <div data-comp-id="text.27" style="font-weight: 300; color: rgb(102, 102, 102);">Reproducibility</div>
+                    <div data-comp-id="text.28" ng-bind="data.reproducibility">Some text</div>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.15"
+                style="border-bottom: 1px solid rgb(243, 243, 243);">
+                <div class="col" data-comp-id="column.15" style="margin: 2% 4%;">
+                    <div data-comp-id="text.29" style="font-weight: 300; color: rgb(102, 102, 102);">Status</div>
+                    <div data-comp-id="text.30" ng-bind="data.status">Some text</div>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.16"
+                style="border-bottom: 1px solid rgb(243, 243, 243);">
+                <div class="col" data-comp-id="column.16" style="margin: 2% 4%;">
+                    <div data-comp-id="text.31" style="font-weight: 300; color: rgb(102, 102, 102);">Resolution</div>
+                    <div data-comp-id="text.32" ng-bind="data.resolution">Some text</div>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.17"
+                style="border-bottom: 1px solid rgb(243, 243, 243);">
+                <div class="col" data-comp-id="column.17" style="margin: 2% 4%;">
+                    <div data-comp-id="text.33" style="font-weight: 300; color: rgb(102, 102, 102);">Platform</div>
+                    <div data-comp-id="text.34" ng-bind="data.platform">Some text</div>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.18"
+                style="border-bottom: 1px solid rgb(243, 243, 243);">
+                <div class="col" data-comp-id="column.18" style="margin: 2% 4%;">
+                    <div data-comp-id="text.35" style="font-weight: 300; color: rgb(102, 102, 102);">OS</div>
+                    <div data-comp-id="text.36" ng-bind="data.OS">Some text</div>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.19">
+                <div class="col" data-comp-id="column.19" style="margin: 2% 4%;">
+                    <div data-comp-id="text.37" style="font-weight: 300; color: rgb(102, 102, 102);">OS Version</div>
+                    <div data-comp-id="text.38" ng-bind="data.osversion">Some text</div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

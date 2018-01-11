@@ -1,0 +1,217 @@
+{
+  "login": {
+    "type": "object",
+    "properties": {
+      "username": {
+        "type": "string"
+      },
+      "password": {
+        "type": "string"
+      },
+      "submit": {
+        "type": "action"
+      },
+      "error": {
+        "type": "string",
+        "selectContains": "Your account may be"
+      }
+    }
+  },
+  "home": {
+    "type": "object",
+    "properties": {
+      "issueList": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "category": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            },
+            "viewdetails": {
+              "type": "action"
+            }
+          }
+        }
+      },
+      "reportIssue": {
+        "type": "action"
+      }
+    }
+  },
+  "viewdetails": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "project": {
+        "type": "string"
+      },
+      "category": {
+        "type": "string"
+      },
+      "dateSubmitted": {
+        "type": "string"
+      },
+      "lastUpdated": {
+        "type": "string"
+      },
+      "reporter": {
+        "type": "string"
+      },
+      "assignedTo": {
+        "type": "string"
+      },
+      "priority": {
+        "type": "string"
+      },
+      "severity": {
+        "type": "string"
+      },
+      "reproducibility": {
+        "type": "string"
+      },
+      "status": {
+        "type": "string"
+      },
+      "resolution": {
+        "type": "string"
+      },
+      "platform": {
+        "type": "string"
+      },
+      "OS": {
+        "type": "string"
+      },
+      "osversion": {
+        "type": "string"
+      },
+      "summary": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "tags": {
+        "type": "string"
+      },
+      "attachTags": {
+        "type": "string"
+      },
+      "existingTags": {
+        "type": "select"
+      },
+      "gotoreportissue": {
+        "type": "action",
+        "selectContains": "Report Issue"
+      },
+      "gotohome": {
+        "type": "action",
+        "selectContains": "My View"
+      }
+    }
+  },
+  "reportissues": {
+    "type": "object",
+    "properties": {
+      "category": {
+        "type": "select"
+      },
+      "reproducibility": {
+        "type": "select"
+      },
+      "Severity": {
+        "type": "select"
+      },
+      "Prority": {
+        "type": "select"
+      },
+      "selectProfile": {
+        "type": "select"
+      },
+      "assignTo": {
+        "type": "select"
+      },
+      "Summary": {
+        "type": "string"
+      },
+      "Description": {
+        "type": "string"
+      },
+      "StepsToReproduce": {
+        "type": "string"
+      },
+      "AdditionalInfo": {
+        "type": "string"
+      },
+      "ReportStay": {
+        "type": "string"
+      },
+      "submitIssues": {
+        "type": "action"
+      },
+      "gotohome": {
+        "type": "action",
+        "selectContains": "My View"
+      },
+      "viewStatus": {
+        "type": "select"
+      }
+    }
+  },
+  "reportissuesuccess": {
+    "type": "object",
+    "properties": {
+      "success": {
+        "type": "string"
+      },
+      "gotohome": {
+        "type": "action",
+        "selectContains": "My View"
+      }
+    }
+  },
+  "reportissueerror": {
+    "type": "object",
+    "properties": {
+      "errorList": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "errormessage": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "gotoReportIssue": {
+        "type": "action",
+        "selectContains": "Report Issue"
+      }
+    }
+  },
+  "menu": {
+    "type": "object",
+    "properties": {
+      "logout": {
+        "type": "action",
+        "selectContains": "Logout"
+      },
+      "gotohome": {
+        "type": "action",
+        "selectContains": "My View"
+      }
+    }
+  }
+}

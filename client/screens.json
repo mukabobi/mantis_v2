@@ -1,0 +1,70 @@
+{
+  "id": "app",
+  "name": "mantis_v2",
+  "startScreen": "app.login",
+  "screens": [
+    {
+      "id": "menu",
+      "name": "menu",
+      "sourceAppId": "MantisClassic",
+      "sourceScreenId": "app.menu",
+      "model": "menu"
+    },
+    {
+      "id": "multiselect",
+      "name": "multiselect",
+      "sourceAppId": "MantisClassic",
+      "sourceScreenId": "app.multiselect"
+    },
+    {
+      "id": "login",
+      "name": "Login",
+      "model": "login",
+      "sourceScreenId": "app.login",
+      "sourceAppId": "MantisClassic"
+    },
+    {
+      "id": "home",
+      "name": "Home",
+      "sourceScreenId": "app.home",
+      "sourceAppId": "MantisClassic",
+      "model": "home"
+    },
+    {
+      "id": "reportissue",
+      "name": "ReportIssue",
+      "sourceScreenId": "app.reportissue",
+      "sourceAppId": "MantisClassic",
+      "model": "reportissues"
+    },
+    {
+      "id": "viewdetails",
+      "name": "View Details",
+      "model": "viewdetails",
+      "sourceAppId": "MantisClassic",
+      "sourceScreenId": "app.viewdetails"
+    },
+    {
+      "id": "reportissuesuccess",
+      "name": "Report Issue Success",
+      "model": "reportissuesuccess",
+      "sourceAppId": "MantisClassic",
+      "sourceScreenId": "app.reportissuesuccess"
+    },
+    {
+      "id": "reportissueerror",
+      "name": "Report Issue Error",
+      "model": "reportissueerror",
+      "sourceAppId": "MantisClassic",
+      "sourceScreenId": "app.reportissueerror"
+    },
+    {
+      "id": "howto",
+      "name": "HowTo",
+      "sourceScreenId": "app.howto",
+      "sourceAppId": "MantisClassic"
+    }
+  ],
+  "sourceAppId": "MantisClassic",
+  "sourceScreenId": "app"
+}

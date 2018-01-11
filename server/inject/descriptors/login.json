@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "username": {
+      "type": "string",
+      "selector": "[name=\"username\"]",
+      "control": "text"
+    },
+    "password": {
+      "type": "string",
+      "selector": "[name=\"password\"]",
+      "control": "text"
+    },
+    "submit": {
+      "type": "action",
+      "selector": ".button",
+      "control": "action.button"
+    },
+    "isLogin": {
+      "type": "identifier",
+      "selector": ".form-title",
+      "control": "exists",
+      "selectContains": "login"
+    },
+    "error": {
+      "type": "string",
+      "selector": "font[color='red']",
+      "control": "property.innerText",
+      "selectContains": "Your account may be"
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "isLogin"
+      ],
+      "screens": [
+        "login"
+      ]
+    }
+  ]
+}
